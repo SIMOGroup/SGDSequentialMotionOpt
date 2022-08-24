@@ -1,5 +1,5 @@
 # Introduction
-We contribute here a Matlab-based package for training deep neural networks (DNN)s based on our novel optimization algorithm named Sequential Motion Optimization (SMO). We select two popular classification problems including MNIST and Fashion-MNIST to demo in this package. Some detailed definitions and instructions are also presented into the codes to help the users easily modify it for personal research and uses. We show below some necessary information of the SMO package including
+We contribute here a Matlab-based package for training deep neural networks (DNN)s based on our novel optimization framework named Sequential Motion Optimization (SMO). We select the popular MNIST classification problem to demo in this package. Some detailed definitions and instructions are also presented into the codes to help the users easily modify it for personal research and uses. We show below some necessary information of the SMO package including
 1.	Structure of SMO software package:
 
   •	Main.m: includes the main codes for running SMO to solve DNN learning problems.
