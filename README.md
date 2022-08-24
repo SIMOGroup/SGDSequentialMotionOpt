@@ -1,7 +1,22 @@
 # Introduction
-We propose a Sequential Motion Optimization (SMO) to strengthen gradient-based methods. The key idea of SMO is inspired from a movement mechanism in a recent metaheuristic method called Balancing Composite Motion Optimization (BCMO). 
-Specifically, SMO establishes a sequential motion chain of two gradientguided individuals including a leader and a follower to enhance the effectiveness of parameter updates in each iteration.
+We contribute here a Matlab-based package for training deep neural networks (DNN)s based on our novel optimization algorithm named Sequential Motion Optimization (SMO). We select two popular classification problems including MNIST and Fashion-MNIST to demo in this package. Some detailed definitions and instructions are also presented into the codes to help the users easily modify it for personal research and uses. We show below some necessary information of the SMO package including
+1.	Structure of SMO software package:
 
+  •	Main.m: includes the main codes for running SMO to solve DNN learning problems.
+
+  •	Folder “SMO Package”: includes the functions defining the SMO procedures to optimize DNN parameters.
+
+  •	Folder “Datasets”: includes the problem datasets.
+
+2.	How to solve DNN training problems by SMO software package:
+
+  •	Put the problem dataset into the “Datasets” folder and specify the problem in the function ClassificationProblems.m
+
+  •	Define the network structures, general learning hyperparameters and SMO settings in the main function Main.m via the functions DNNStructure.m, DNN_Setup.m, DNN_LearningRate.m, SMO_Setup.m, Batch_Setup.m and RankSetup.m
+
+  •	Run Main.m and wait until the training process stops.
+
+  •	The network parameters and results are recorded in the DNN.mat and results.mat, respectively.
 ...
 # Contributors
 - Thang Le-Duc
